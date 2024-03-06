@@ -1,0 +1,75 @@
+.product-card {
+    position: relative;
+    box-shadow: 0 0 6px 1px rgba(0, 0, 0, .06);
+}
+
+.product-card .product-img {
+    width: 224px;
+    height: 320px;
+    margin: 0 auto;
+}
+
+.product-card .product-badge-list {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.product-card .product-badge-list .product-badge {
+    width: 85px;
+    height: 85px;
+    font-size: 10px;
+    color: #fff;
+    font-weight: 500;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 8px 10px;
+    margin: 5px 0;
+}
+
+.product-card .product-badge-list .product-badge.badge-blue {
+    background-image: url(/public/assets/images/icons/discount-bg.svg);
+}
+
+.product-card .product-badge-list .product-badge.badge-red {
+    background-image: url(/public/assets/images/icons/birkart3.svg);
+}
+
+.product-card .product-badge-list .product-badge.badge-red span,
+.product-card .product-badge-list .product-badge.badge-green span:first-child {
+    padding-top: 12px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.product-card .product-badge-list .product-badge.badge-green {
+    background-image: url(/public/assets/images/icons/label-green.svg);
+}
+
+.product-card .product-badge-list .product-badge span:nth-child(3) {
+    font-weight: 700;
+}
+
+.product-card .product-img img {
+    height: 100%;
+    object-fit: fill;
+}
+
+.product-card .product-info .product-color {
+    width: 40px;
+    height: 12px;
+}
+
+.product-card .product-name {
+    height: 58px;
+}
+
+.product-card .product-info .months button {
+    color: #d8d8d8;
+}
+
+.product-card .product-info .months button.active {
+    color: #2a304c;
+    background-color: #3b7fed66;
+}

@@ -1,0 +1,55 @@
+.breadcrumb-box a {
+    position: relative;
+    font-size: 15px;
+    padding: 0 10px;
+}
+
+.breadcrumb-box a.active {
+    color: #3b7fed;
+}
+
+.breadcrumb-box a:not(:last-child)::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 15px;
+    background-color: #000;
+    right: -4px;
+    top: 2px;
+}
+
+.category-item {
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, .044);
+}
+
+.category-item li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+
+    &:hover {
+        color: #3b7fed;
+    }
+}
+
+.category-item a {
+    display: block;
+    padding: 5px 0;
+    font-weight: 400;
+    transition: .5s;
+
+}
+
+.category-item li label {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.category-item li label input {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 0;
+}

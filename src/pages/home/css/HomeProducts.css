@@ -1,0 +1,23 @@
+.main-category .category-block img {
+    height: 35px;
+    filter: grayscale(1);
+
+}
+
+.main-category .category-block:hover {
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, .058);
+}
+
+.main-category .category-block:hover img {
+    filter: grayscale(0);
+}
+
+.main-category .category-block.active,
+.main-category .category-block.active img {
+    color: rgb(59 127 237);
+    filter: grayscale(0);
+}
+
+.main-category .category-block.active {
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, .058);
+}

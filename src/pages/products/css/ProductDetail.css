@@ -1,0 +1,12 @@
+.detail-card-swiper {
+    color: #4d595a;
+}
+
+.detail-card-swiper .swiper-slide .card-img {
+    width: 100px;
+    height: 75px;
+}
+
+.detail-card-swiper .swiper-slide .card-img img {
+    object-fit: contain;
+}
