@@ -15,7 +15,7 @@ const wishlist = createSlice({
             const itemIndex = state.items.findIndex(item => item.id === currentProduct.id);
             if (!state.idArray.includes(currentProduct.id)) {
                 state.items.push(currentProduct);
-                state.idArray.push(currentProduct.id)
+                state.idArray.push(currentProduct.id);
                 state.count += 1;
             } else {
                 if (itemIndex !== -1) {

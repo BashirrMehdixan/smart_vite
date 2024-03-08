@@ -1,5 +1,5 @@
 import {Link} from "react-router-dom";
-import {useDispatch, useSelector} from "react-redux";
+import {useDispatch} from "react-redux";
 import {addToWishlist} from "../features/wishlist";
 // Icons
 import {IoFilterOutline, IoBagOutline} from "react-icons/io5";
@@ -7,9 +7,11 @@ import {CiHeart} from "react-icons/ci";
 
 // Css
 import "./css/ProductCard.css"
+import {useState} from "react";
 
 const ProductCard = ({product}) => {
     const dispatch = useDispatch();
+    const [selected] = useState(product.active)
     const addToWish = (product) => {
         dispatch(addToWishlist(product))
     }
@@ -28,7 +30,7 @@ const ProductCard = ({product}) => {
                 </button>
                 <button
                     onClick={() => addToWish(product)}
-                    className={`btn-compare ${product.active ? 'active' : ''}`}
+                    className={`btn-compare ${selected ? 'active' : ''}`}
                 >
                     <CiHeart/>
                 </button>
